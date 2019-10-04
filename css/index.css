@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
-
+/* changed to make more responsive */
 /* .container {
     width: 800px;
     margin: 0 auto;
@@ -154,6 +154,14 @@ footer nav a {
 .bannerImg {
 	width: 100%;
 }
+.button button {
+	width: 150px;
+	height: 45px;
+	font-size: 18px;
+	border: 2px solid black;
+	background-color: white;
+    border-radius: 12px;
+}
 
 /* body styles */
 .container {
@@ -186,8 +194,13 @@ footer nav a {
 /* navbar styles end */
 
 /* header styles begin */
-.indexHeaderImg {
+.headerImg {
     margin: 100px 0 20px;
+}
+
+.aboutHeaderText {
+    padding-bottom: 3%;
+    border-bottom: 1px dashed black; 
 }
 
 /* main content styles start */
@@ -222,4 +235,26 @@ footer nav a {
 }
 .box10 {
     background-color: dodgerblue;
+}
+/* index.html end */
+
+/* about.html styles start */
+
+.aboutTileRow {
+    max-width: 100%;
+    margin-bottom: 3%;
+    justify-content: space-between;
+}
+.aboutTile {
+    margin-top: 3%;
+    width: 47%;
+    border-bottom: 1px dashed black; 
+    padding-bottom: 3%;
+}
+.aboutTile > * {
+    width: 100%;
+    padding: 3%;
+}
+.aboutMainClose {
+    margin: 5% 2%;
 }
