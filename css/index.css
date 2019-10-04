@@ -258,3 +258,18 @@ footer nav a {
 .aboutMainClose {
     margin: 5% 2%;
 }
+
+/* stretch goal CSS Animation */
+
+.button button {
+  animation: slide 20s 1;
+}
+
+@keyframes slide {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: rgba(220,20,60,.25);
+  }
+}
