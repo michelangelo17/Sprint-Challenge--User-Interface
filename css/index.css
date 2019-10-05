@@ -65,11 +65,11 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
-
-.container {
+/* changed to make more responsive */
+/* .container {
     width: 800px;
     margin: 0 auto;
-}
+} */
 
 .top-content {
     display: flex;
@@ -104,7 +104,7 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -143,4 +143,133 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Start of Michelangelo's CSS */
+
+/* CSS tools */
+.flexContainer {
+    display: flex;
+}
+.bannerImg {
+	width: 100%;
+}
+.button button {
+	width: 150px;
+	height: 45px;
+	font-size: 18px;
+	border: 2px solid black;
+	background-color: white;
+    border-radius: 12px;
+}
+
+/* body styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* navbar styles start */
+.navBar {
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 0 5%;
+	background-color: white;
+	z-index: 999;
+	align-items: center;
+    justify-content: space-around;
+}
+.navLinks {
+    width: 60%;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.navLinks a {
+    text-decoration: none;
+    color: black;
+}
+/* navbar styles end */
+
+/* header styles begin */
+.headerImg {
+    margin: 100px 0 20px;
+}
+
+.aboutHeaderText {
+    padding-bottom: 3%;
+    border-bottom: 1px dashed black; 
+}
+
+/* main content styles start */
+
+/* index.html styles */
+.box1 {
+    background-color: teal;
+}
+.box2 {
+    background-color: gold;
+}
+.box3 {
+    background-color: cadetblue;
+}
+.box4 {
+    background-color: coral;
+}
+.box5 {
+    background-color: crimson;
+}
+.box6 {
+    background-color: forestgreen;
+}
+.box7 {
+    background-color: darkorchid;
+}
+.box8 {
+    background-color: hotpink;
+}
+.box9 {
+    background-color: indigo;
+}
+.box10 {
+    background-color: dodgerblue;
+}
+/* index.html end */
+
+/* about.html styles start */
+
+.aboutTileRow {
+    max-width: 100%;
+    margin-bottom: 3%;
+    justify-content: space-between;
+}
+.aboutTile {
+    margin-top: 3%;
+    width: 47%;
+    border-bottom: 1px dashed black; 
+    padding-bottom: 3%;
+}
+.aboutTile > * {
+    width: 100%;
+    padding: 3%;
+}
+.aboutMainClose {
+    margin: 5% 2%;
+}
+
+/* stretch goal CSS Animation */
+
+.button button {
+  animation: slide 20s 1;
+}
+
+@keyframes slide {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: rgba(220,20,60,.25);
+  }
 }
